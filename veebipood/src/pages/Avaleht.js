@@ -35,10 +35,15 @@ function Avaleht() {
 <div>{sonum}</div>
         {kogus!== 0 && <button onClick={nulli}>Tagasi nulli</button>}
         <button onClick={vahenda}>-</button>
-        <span>kogus:{kogus}tükki </span>
+      { /* <span className={kogus >= 15 && "kuldne"}>kogus: {kogus}tükki </span> */} 
+        <span className={kogus >= 15 ? "kuldne" : undefined}>kogus: {kogus}tükki </span>
         <button onClick={suurenda}>+</button>
     </div>
   )
 }
+// ? : on ternary operator ja tegemist on lühendatud if/else kujuga
+// if (kogus >=15) {võta kasutusele "kuldne"} else { võta kasutusele tühjus ehk undefined }
+//    kogus >= 15 ?        "kuldne"            :       undefined
+
 
 export default Avaleht

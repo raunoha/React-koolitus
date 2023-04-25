@@ -18,3 +18,19 @@ border: 2px dotted blue;
   text-decoration: underline;
   border: 2px dotted green;
 }
+
+.kuldne {
+  color: goldenrod;
+}
+
+.tume-leht{
+background-color: black;
+color: white;
+min-height: 100vh;
+/* vh ekraani korgus vw- laius */
+}
+
+.hele-leht {
+background-color: aliceblue;
+min-height: 100vh;
+}
