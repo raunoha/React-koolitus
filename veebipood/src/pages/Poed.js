@@ -6,7 +6,7 @@ function Poed() {
   const [poed, uuendaPoed] = useState(poedFailist)
   
 const tagasi= () => {
-  uuendaPoed (["Ülemist", "Viimsi", "Rocca ak Mare", "Magistral", "Vesse", "Kristiine", "Järveotsa"])
+  uuendaPoed (poedFailist);
 }
 
   const sorteeriAZ = () => {

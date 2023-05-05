@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ostukorvFailist from "..data/ostukorv.json"
+import ostukorvFailist from "../data/ostukorv.json"
 
 function Ostukorv() {
   const [ostukorv, uuendaOstukorv] = useState(ostukorvFailist);
@@ -14,7 +14,7 @@ uuendaOstukorv(ostukorvFailist.slice());
     <div>
       {ostukorv.lenght > 0 && <div>Ostukorvis on {ostukorv.lenght} eset </div>}
       {ostukorv.map((toode, index) => <div>{toode} <button onClick={ () => kustuta(index)}>x</button></div>)}
-        { ostukorv.lenght === 0 && <div>Ostukorv on tühi. <Link to="/">Tooteid lisama</Link></div>}
+      { ostukorv.lenght === 0 && <div>Ostukorv on tühi. <Link to="/">Tooteid lisama</Link></div>}
     </div>
   )
 }
