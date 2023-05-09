@@ -14,6 +14,8 @@ import Boooks from './pages/Boooks';
 import Numbrid from './pages/Numbrid';
 import Tooted from './pages/Tooted';
 import HaldaTooteid from './pages/HaldaTooteid';
+import YksikToode from './pages/YksikToode';
+import MuudaToode from './pages/MuudaToode';
 // ctrl+ä on kommentaar mis nö kustutab koodi
 // (kaks kaldkriipsu)aga jätab meile alles et hiljem vaadata
 
@@ -112,6 +114,8 @@ const muudaHeledaks = ()=> {
       <Route path="numbrid"element={ <Numbrid />} />
       <Route path="tooted"element={ <Tooted />} />
       <Route path="halda"element={ <HaldaTooteid />} />
+      <Route path="toode/:index" element={ <YksikToode />} />
+      <Route path="muuda/:jrknr" element={ <MuudaToode />} />
     </Routes>
 
     </div>

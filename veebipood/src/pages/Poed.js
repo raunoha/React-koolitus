@@ -53,6 +53,22 @@ uuendaPoed(poed.slice())
     uuendaPoed(poed.slice())
   }
 
+  const filreeriSuuremKui7= () => {
+    const vastus =poed.filter(yksPood =>  yksPood.length > 7);
+  uuendaPoed(vastus)
+    }
+
+
+  const filreeriVordne9= () => {
+  const vastus =poed.filter(yksPood =>  yksPood.length === 9);
+uuendaPoed(vastus)
+  }
+
+  const filreeriVaiksemKui7= () => {
+    const vastus =poed.filter(yksPood =>  yksPood.length < 7);
+  uuendaPoed(vastus)
+    }
+
 
   return (
     <div>
@@ -67,8 +83,16 @@ uuendaPoed(poed.slice())
       <button onClick= {sorteeriKolmasTahtAZ}>Sorteeri kolmas täht</button>
       <br />
       <button onClick= {filreeriSisalabIsLyhendit}>Is lühend</button>
+      <br />
       <button onClick= {filreeriKolmasTahtI}>Kolmas täht on "i"</button>
+      <br />
       <button onClick= {filreeriL6pebEga}>Lõppeb "e"ga</button>
+      <br />
+      <button onClick= {filreeriVordne9}>9</button>
+      <button onClick= {filreeriSuuremKui7}>7</button>
+      <button onClick= {filreeriVaiksemKui7}>Väiksem kui 7</button>
+      
+      <br />
       {poed.map((yksPood,jrknr) => <div>{yksPood} <button onClick={() => kustuta(jrknr)}>x</button></div>)}
       
       </div>
