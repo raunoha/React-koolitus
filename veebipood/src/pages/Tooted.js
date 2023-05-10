@@ -46,7 +46,7 @@ const filtreeriN = () => {
     /* const filtreeri = (esitaht) => {
     const vastus = tootedFailist.filter(yksToode => yksToode.nimi.startsWith(esitaht));
     uuendaTooted(vastus);
-    button onClick={() => filtreeri("B")}>B</button> 3korda nuppu B T N 
+    button onClick={() => filtreeri("B")}>B</button> 3korda nuppu B T N
     
     */
   return (
